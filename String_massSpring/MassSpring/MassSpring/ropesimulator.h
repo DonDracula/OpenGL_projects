@@ -34,6 +34,8 @@ private:
 	float springLength;
 	float springFrictionConstant;
 	Vec3 g;
+	Vec3 ropeConnectionPos;
+	Vec3 ropeConnectionVel;
 
 	Mass **masses;			//a mass pointer which point to the struction
 	Spring **springs;		//Springs binding the masses(there shall be [numofmasses-1] of them)
@@ -41,7 +43,7 @@ private:
 	float airFrictionConstant;
 	float groundRepulsionConstant;
 	float groundFrictionConstant;
-	float groundAbsorptonConstant;
+	float groundAbsorptionConstant;
 	float groundHeight;
 };
 
