@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FeelMyLove", "FeelMyLove\FeelMyLove.vcxproj", "{DC5DC0E1-078E-4C10-AC4E-B68495D53E21}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DC5DC0E1-078E-4C10-AC4E-B68495D53E21}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DC5DC0E1-078E-4C10-AC4E-B68495D53E21}.Debug|Win32.Build.0 = Debug|Win32
+		{DC5DC0E1-078E-4C10-AC4E-B68495D53E21}.Release|Win32.ActiveCfg = Release|Win32
+		{DC5DC0E1-078E-4C10-AC4E-B68495D53E21}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
