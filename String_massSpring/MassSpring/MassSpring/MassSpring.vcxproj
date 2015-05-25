@@ -65,14 +65,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\..\common\shared\inc\rx_trackball.h" />
     <ClInclude Include="mass.h" />
-    <ClInclude Include="ropesimulator.h" />
     <ClInclude Include="spring.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="mass.cpp" />
-    <ClCompile Include="ropesimulator.cpp" />
-    <ClCompile Include="spring.cpp" />
+    <ClCompile Include="..\..\..\..\common\shared\inc\rx_trackball.cpp" />
+    <ClCompile Include="glmain.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

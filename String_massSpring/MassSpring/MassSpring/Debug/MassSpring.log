@@ -1,0 +1,11 @@
+﻿Build started 2015/05/22 17:03:42.
+     1>Project "F:\WorkPlace\VS WorkPlace\OpenGL_WorkSpace\String_massSpring\MassSpring\MassSpring\MassSpring.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt glmain.cpp
+         glmain.cpp
+     1>f:\workplace\vs workplace\opengl_workspace\string_massspring\massspring\massspring\glmain.cpp(14): fatal error C1083: Cannot open include file: 'ropesimulator.h': No such file or directory
+     1>Done Building Project "F:\WorkPlace\VS WorkPlace\OpenGL_WorkSpace\String_massSpring\MassSpring\MassSpring\MassSpring.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.62
