@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="GL Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Trackball Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Mass Files">
+      <UniqueIdentifier>{be391adf-c210-47c4-b484-fc5ca662e370}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Spring Files">
+      <UniqueIdentifier>{5366cf1c-e07e-4689-a846-36fb061656e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RopeSimulatolr Files">
+      <UniqueIdentifier>{04653242-adc3-409c-8df6-47d9075afb0a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="glmain.cpp">
+      <Filter>GL Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mass.cpp">
+      <Filter>Mass Files</Filter>
+    </ClCompile>
+    <ClCompile Include="spring.cpp">
+      <Filter>Spring Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RopeSimulator.cpp">
+      <Filter>RopeSimulatolr Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rx_trackball.cpp">
+      <Filter>Trackball Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="mass.h">
+      <Filter>Mass Files</Filter>
+    </ClInclude>
+    <ClInclude Include="spring.h">
+      <Filter>Spring Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ropesimulator.h">
+      <Filter>RopeSimulatolr Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rx_trackball.h">
+      <Filter>Trackball Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
