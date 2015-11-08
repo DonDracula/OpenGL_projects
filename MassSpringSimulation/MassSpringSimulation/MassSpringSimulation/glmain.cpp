@@ -9,6 +9,8 @@
 //include files
 //--------------------------------------------------------------------------------
 
+#include "utils.h"
+
 #include "ropesimulator.h"
 #include "rx_trackball.h"
 //define program name
@@ -32,6 +34,17 @@ double g_fBGColor[4] = {0.8,0.9,1.0,1.0};
 rxTrackball g_tbView;
 
 double g_fDt = 0.03;				//update time
+
+// mouse state
+int g_iMouseButton = -1;
+// キーの状態
+int g_iKeyMod = 0;
+//mouse pick 
+rxGLPick g_Pick;
+vector<int> g_vSelectedVertices;
+int g_iPickedObj = -1;
+double g_fPickDist = 1.0;	//!< ピックされた点までの距離
+const GLfloat RX_FOV = 45.0f;
 
 //function declaration & definition 
 void OnExitApp(int id =-1);
@@ -164,6 +177,7 @@ void RenderScene(void)
 	//drawing teh rope ends here
 
 	glPopMatrix();
+
 }
 
 //event handle
@@ -233,6 +247,8 @@ void InitGL(void)
 		cout << "GLEW Error :"<<glewGetErrorString(err) << endl;
 	}
 
+
+
 	//multisample
 	GLint buf,sbuf;
 	glGetIntegerv(GL_SAMPLER_BUFFER,&buf);
@@ -298,38 +314,142 @@ set the mouse control button
 @param[in] x,y the positon of the mouse button
 
 */
-void Mouse(int button,int state,int x,int y)
-{
-	if(x<0||y<0) return;
+//void Mouse(int button,int state,int x,int y)
+//{
+//	if(x<0||y<0) return;
+//
+//	int mod = glutGetModifiers();		//get the state mode of SHIFT,CTRL,ALT
+//
+//	if(button == GLUT_LEFT_BUTTON){
+//		if(state == GLUT_DOWN)
+//		{
+//			g_tbView.Start(x,y,mod+1);
+//		}
+//		else if(state == GLUT_UP)
+//		{
+//			g_tbView.Stop(x,y);
+//		}
+//	}
+//	else if (button == GLUT_MIDDLE_BUTTON){
+//	}
+//	else if(button == GLUT_RIGHT_BUTTON)
+//	{
+//	}
+//	glutPostRedisplay();
+//}
+//
+//
+////motion function(put down the button)
+////@param[in] x,y :the positon of the mouse
+//void Motion(int x,int y)
+//{
+//	if(x<0 || y<0) return;
+//	int mod = glutGetModifiers();		//get the state mode of Shift,Ctrl,Alt
+//	g_tbView.Motion(x,y);
+//	glutPostRedisplay();
+//}
 
-	int mod = glutGetModifiers();		//get the state mode of SHIFT,CTRL,ALT
+
+void ClearPick(void)
+{
+	g_vSelectedVertices.clear();
+	//if(g_iPickedObj != -1){
+		//for(int i = 0; i < g_vObj[g_iPickedObj].deform->GetNumOfVertices(); ++i) g_vObj[g_iPickedObj].deform->UnFixVertex(i);
+		//for(int i = 0; i < g_ropeObj[g_iPickedObj].ropeDeform->GetNumOfVertices(); ++i) g_ropeObj[g_iPickedObj].ropeDeform->UnFixVertex(i);
+	//	g_iPickedObj = -1;
+	//}
+}
+
+void Mouse(int button, int state, int x, int y)
+{
+	g_iKeyMod = glutGetModifiers();	// SHIFT,CTRL,ALTの状態取得
 
 	if(button == GLUT_LEFT_BUTTON){
-		if(state == GLUT_DOWN)
-		{
-			g_tbView.Start(x,y,mod+1);
+		if(state == GLUT_DOWN){
+			int hit = g_Pick.Pick(x, y);
+			if(hit >= 1){
+				int v = hit-1;
+
+				// どのオブジェクトの頂点なのかを判別
+			//	g_iPickedObj = -1;
+				//int size = (int)g_vObj.size();
+			//	int size = (int)g_ropeObj.size();
+			//	for(int i = 0; i < size; ++i){
+					//if(g_vObj[i].vstart <= v && v <= g_vObj[i].vend){
+				//	if(g_ropeObj[i].vstart<=v&&v<=g_ropeObj[i].vend){
+						g_iPickedObj = 0;
+					//	break;
+					//}
+					//}
+			//	}
+
+				if(g_iPickedObj != -1){
+					vector<int> vrts;
+					vrts.push_back(v);
+					cout << "vertex " << v << " is selected - " << g_iPickedObj << endl;
+					g_vSelectedVertices.resize(1);
+					//	g_vSelectedVertices[0] = v-g_vObj[g_iPickedObj].vstart;
+					g_vSelectedVertices[0] = v;
+
+					// 視点からピック点までの距離計算
+					Vec3 ray_from;
+					Vec3 init_pos = Vec3(0.0);
+					g_tbView.CalLocalPos(ray_from, init_pos);
+					//Vec3 pos = g_vObj[g_iPickedObj].deform->GetVertexPos(v);
+					Vec3 pos = ropeSimulator->getMass(0)->getPos();
+
+					g_fPickDist = length(pos-ray_from);
+				}
+			}
+			else{
+				g_tbView.Start(x, y, g_iKeyMod+1);
+				ClearPick();
+			}
 		}
-		else if(state == GLUT_UP)
-		{
-			g_tbView.Stop(x,y);
+		else if(state == GLUT_UP){
+			g_tbView.Stop(x, y);
+			ClearPick();
 		}
 	}
-	else if (button == GLUT_MIDDLE_BUTTON){
+	else if(button == GLUT_MIDDLE_BUTTON){
 	}
-	else if(button == GLUT_RIGHT_BUTTON)
-	{
+	else if(button == GLUT_RIGHT_BUTTON){
 	}
+
 	glutPostRedisplay();
 }
-//motion function(put down the button)
-//@param[in] x,y :the positon of the mouse
-void Motion(int x,int y)
+
+/*!
+* モーションイベント処理関数(マウスボタンを押したままドラッグ)
+* @param[in] x,y マウス座標(スクリーン座標系)
+*/
+void Motion(int x, int y)
 {
-	if(x<0 || y<0) return;
-	int mod = glutGetModifiers();		//get the state mode of Shift,Ctrl,Alt
-	g_tbView.Motion(x,y);
+	if(g_vSelectedVertices.empty()){
+		g_tbView.Motion(x, y);
+	}
+	else{
+		Vec3 ray_from, ray_to;
+		Vec3 init_pos = Vec3(0.0);
+		g_tbView.CalLocalPos(ray_from, init_pos);
+		g_tbView.GetRayTo(x, y, RX_FOV, ray_to);
+
+		Vec3 dir = Unit(ray_to-ray_from);	// 視点からマウス位置へのベクトル
+
+		int v = g_vSelectedVertices[0];
+		//Vec3 cur_pos = g_vObj[g_iPickedObj].deform->GetVertexPos(v);
+		Vec3 cur_pos = ropeSimulator->getMass(0)->getPos();
+		Vec3 new_pos = ray_from+dir*g_fPickDist;
+		//g_vObj[g_iPickedObj].deform->FixVertex(v, new_pos);
+		ropeSimulator->getMass(0)->setPos(new_pos);
+	}
+
+
+
 	glutPostRedisplay();
 }
+
+
 
 //motion function()
 void PassiveMotion(int x,int y)
@@ -364,7 +484,7 @@ void Keyboard(unsigned char key, int x, int y)
 		break;
 
 	case 'd':
-		ropeConnectionVel.data[0] +=3.0f;
+		ropeConnectionVel.data[0] +=30.0f;
 		break;
 	case 'a':
 		ropeConnectionVel.data[0] -=3.0f;

@@ -49,5 +49,14 @@
     <ClInclude Include="rx_trackball.h">
       <Filter>Trackball Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\..\CodeSample\rx_shape_matching\rx_shape_matching\rx_nnsearch.h">
+      <Filter>GL Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utils.h">
+      <Filter>GL Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rx_pcube.h">
+      <Filter>GL Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

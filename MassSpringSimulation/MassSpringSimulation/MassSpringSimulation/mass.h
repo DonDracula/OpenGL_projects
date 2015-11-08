@@ -12,6 +12,9 @@
 #include <GL/glut.h>
 
 #include "rx_utility.h"			//Vector classes
+#include "rx_matrix.h"
+
+#include "rx_nnsearch.h"
 
 using namespace std;
 

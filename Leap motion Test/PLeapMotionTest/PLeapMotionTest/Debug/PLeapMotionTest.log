@@ -1,0 +1,20 @@
+﻿Build started 2015/10/22 18:45:11.
+     1>Project "F:\WorkPlace\VS WorkPlace\OpenGL_WorkSpace\Leap motion Test\PLeapMotionTest\PLeapMotionTest\PLeapMotionTest.vcxproj" on node 2 (Build target(s)).
+     1>PreBuildEvent:
+         xcopy /yr "D:\SoftWare\LeapMotion\LeapDeveloperKit_2.3.1+31549_win\LeapSDK\lib\x86\Leap.dll" "F:\WorkPlace\VS WorkPlace\OpenGL_WorkSpace\Leap motion Test\PLeapMotionTest"
+         :VCEnd
+         D:\SoftWare\LeapMotion\LeapDeveloperKit_2.3.1+31549_win\LeapSDK\lib\x86\Leap.dll
+         1 個のファイルをコピーしました
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ID:\SoftWare\LeapMotion\LeapDeveloperKit_2.3.1+31549_win\LeapSDK\include /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt test.cpp
+         test.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\WorkPlace\VS WorkPlace\OpenGL_WorkSpace\Leap motion Test\PLeapMotionTest\Debug\PLeapMotionTest.exe" /INCREMENTAL /NOLOGO /LIBPATH:D:\SoftWare\LeapMotion\LeapDeveloperKit_2.3.1+31549_win\LeapSDK\lib\x86 Leap.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:\WorkPlace\VS WorkPlace\OpenGL_WorkSpace\Leap motion Test\PLeapMotionTest\Debug\PLeapMotionTest.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\WorkPlace\VS WorkPlace\OpenGL_WorkSpace\Leap motion Test\PLeapMotionTest\Debug\PLeapMotionTest.lib" /MACHINE:X86 Debug\glmain.obj
+         Debug\rx_trackball.obj
+         Debug\test.obj
+         PLeapMotionTest.vcxproj -> F:\WorkPlace\VS WorkPlace\OpenGL_WorkSpace\Leap motion Test\PLeapMotionTest\Debug\PLeapMotionTest.exe
+     1>Done Building Project "F:\WorkPlace\VS WorkPlace\OpenGL_WorkSpace\Leap motion Test\PLeapMotionTest\PLeapMotionTest\PLeapMotionTest.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.46

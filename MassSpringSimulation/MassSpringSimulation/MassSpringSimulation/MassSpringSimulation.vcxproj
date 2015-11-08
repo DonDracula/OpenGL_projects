@@ -72,10 +72,13 @@
     <ClCompile Include="spring.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\..\CodeSample\rx_shape_matching\rx_shape_matching\rx_nnsearch.h" />
     <ClInclude Include="mass.h" />
     <ClInclude Include="ropesimulator.h" />
+    <ClInclude Include="rx_pcube.h" />
     <ClInclude Include="rx_trackball.h" />
     <ClInclude Include="spring.h" />
+    <ClInclude Include="utils.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

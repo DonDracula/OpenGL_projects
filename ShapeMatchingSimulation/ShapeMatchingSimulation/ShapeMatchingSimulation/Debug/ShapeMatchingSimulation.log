@@ -1,4 +1,4 @@
-﻿Build started 2015/06/09 22:34:26.
+﻿Build started 2015/10/20 20:14:19.
      1>Project "F:\WorkPlace\VS WorkPlace\OpenGL_WorkSpace\ShapeMatchingSimulation\ShapeMatchingSimulation\ShapeMatchingSimulation\ShapeMatchingSimulation.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt gmain.cpp
@@ -20,4 +20,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.11
+Time Elapsed 00:00:01.15
