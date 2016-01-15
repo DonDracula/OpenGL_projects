@@ -1,0 +1,78 @@
+﻿Build started 2016/01/14 13:45:17.
+     1>Project "F:\WorkPlace\VS WorkPlace\cubemapDemo\CubeMap\CubeMap\CubeMap.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt ..\glmain.cpp
+         glmain.cpp
+     1>f:\workplace\vs workplace\cubemapdemo\cubemap\rx_shadowmap.h(91): warning C4244: 'argument' : conversion from 'double' to 'GLsizei', possible loss of data
+     1>f:\workplace\vs workplace\cubemapdemo\cubemap\rx_shadowmap.h(137): warning C4244: 'argument' : conversion from 'double' to 'GLsizei', possible loss of data
+     1>f:\workplace\vs workplace\cubemapdemo\cubemap\rx_shadowmap.h(250): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\cubemapdemo\cubemap\rx_shadowmap.h(251): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\cubemapdemo\cubemap\rx_shadowmap.h(252): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\cubemapdemo\cubemap\rx_shadowmap.h(253): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>..\glmain.cpp(178): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>..\glmain.cpp(187): warning C4305: 'initializing' : truncation from 'double' to 'float'
+     1>..\glmain.cpp(216): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>..\glmain.cpp(218): warning C4305: 'initializing' : truncation from 'double' to 'float'
+     1>..\glmain.cpp(218): warning C4305: '+=' : truncation from 'double' to 'float'
+     1>..\glmain.cpp(220): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>..\glmain.cpp(221): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>..\glmain.cpp(222): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\WorkPlace\VS WorkPlace\cubemapDemo\CubeMap\Release\CubeMap.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:\WorkPlace\VS WorkPlace\cubemapDemo\CubeMap\Release\CubeMap.pdb" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\WorkPlace\VS WorkPlace\cubemapDemo\CubeMap\Release\CubeMap.lib" /MACHINE:X86 /SAFESEH Release\glmain.obj
+         Release\rx_trackball.obj
+         Generating code
+         Finished generating code
+     1>libjpeg.lib(jdapistd.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jdapistd.obj)' or at 'F:\WorkPlace\VS WorkPlace\cubemapDemo\CubeMap\Release\vc110.pdb'; linking object as if no debug info
+     1>libjpeg.lib(jdatasrc.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jdatasrc.obj)' or at 'F:\WorkPlace\VS WorkPlace\cubemapDemo\CubeMap\Release\vc110.pdb'; linking object as if no debug info
+     1>libjpeg.lib(jdapimin.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jdapimin.obj)' or at 'F:\WorkPlace\VS WorkPlace\cubemapDemo\CubeMap\Release\vc110.pdb'; linking object as if no debug info
+     1>libjpeg.lib(jerror.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jerror.obj)' or at 'F:\WorkPlace\VS WorkPlace\cubemapDemo\CubeMap\Release\vc110.pdb'; linking object as if no debug info
+     1>libjpeg.lib(jdmaster.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jdmaster.obj)' or at 'F:\WorkPlace\VS WorkPlace\cubemapDemo\CubeMap\Release\vc110.pdb'; linking object as if no debug info
+     1>libjpeg.lib(jdmarker.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jdmarker.obj)' or at 'F:\WorkPlace\VS WorkPlace\cubemapDemo\CubeMap\Release\vc110.pdb'; linking object as if no debug info
+     1>libjpeg.lib(jcomapi.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jcomapi.obj)' or at 'F:\WorkPlace\VS WorkPlace\cubemapDemo\CubeMap\Release\vc110.pdb'; linking object as if no debug info
+     1>libjpeg.lib(jdinput.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jdinput.obj)' or at 'F:\WorkPlace\VS WorkPlace\cubemapDemo\CubeMap\Release\vc110.pdb'; linking object as if no debug info
+     1>libjpeg.lib(jmemmgr.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jmemmgr.obj)' or at 'F:\WorkPlace\VS WorkPlace\cubemapDemo\CubeMap\Release\vc110.pdb'; linking object as if no debug info
+     1>libjpeg.lib(jdhuff.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jdhuff.obj)' or at 'F:\WorkPlace\VS WorkPlace\cubemapDemo\CubeMap\Release\vc110.pdb'; linking object as if no debug info
+     1>libjpeg.lib(jquant1.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jquant1.obj)' or at 'F:\WorkPlace\VS WorkPlace\cubemapDemo\CubeMap\Release\vc110.pdb'; linking object as if no debug info
+     1>libjpeg.lib(jddctmgr.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jddctmgr.obj)' or at 'F:\WorkPlace\VS WorkPlace\cubemapDemo\CubeMap\Release\vc110.pdb'; linking object as if no debug info
+     1>libjpeg.lib(jdsample.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jdsample.obj)' or at 'F:\WorkPlace\VS WorkPlace\cubemapDemo\CubeMap\Release\vc110.pdb'; linking object as if no debug info
+     1>libjpeg.lib(jdarith.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jdarith.obj)' or at 'F:\WorkPlace\VS WorkPlace\cubemapDemo\CubeMap\Release\vc110.pdb'; linking object as if no debug info
+     1>libjpeg.lib(jdcolor.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jdcolor.obj)' or at 'F:\WorkPlace\VS WorkPlace\cubemapDemo\CubeMap\Release\vc110.pdb'; linking object as if no debug info
+     1>libjpeg.lib(jdcoefct.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jdcoefct.obj)' or at 'F:\WorkPlace\VS WorkPlace\cubemapDemo\CubeMap\Release\vc110.pdb'; linking object as if no debug info
+     1>libjpeg.lib(jquant2.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jquant2.obj)' or at 'F:\WorkPlace\VS WorkPlace\cubemapDemo\CubeMap\Release\vc110.pdb'; linking object as if no debug info
+     1>libjpeg.lib(jdmerge.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jdmerge.obj)' or at 'F:\WorkPlace\VS WorkPlace\cubemapDemo\CubeMap\Release\vc110.pdb'; linking object as if no debug info
+     1>libjpeg.lib(jdmainct.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jdmainct.obj)' or at 'F:\WorkPlace\VS WorkPlace\cubemapDemo\CubeMap\Release\vc110.pdb'; linking object as if no debug info
+     1>libjpeg.lib(jutils.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jutils.obj)' or at 'F:\WorkPlace\VS WorkPlace\cubemapDemo\CubeMap\Release\vc110.pdb'; linking object as if no debug info
+     1>libjpeg.lib(jdpostct.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jdpostct.obj)' or at 'F:\WorkPlace\VS WorkPlace\cubemapDemo\CubeMap\Release\vc110.pdb'; linking object as if no debug info
+     1>libjpeg.lib(jmemnobs.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jmemnobs.obj)' or at 'F:\WorkPlace\VS WorkPlace\cubemapDemo\CubeMap\Release\vc110.pdb'; linking object as if no debug info
+     1>libjpeg.lib(jidctint.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jidctint.obj)' or at 'F:\WorkPlace\VS WorkPlace\cubemapDemo\CubeMap\Release\vc110.pdb'; linking object as if no debug info
+     1>libjpeg.lib(jidctflt.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jidctflt.obj)' or at 'F:\WorkPlace\VS WorkPlace\cubemapDemo\CubeMap\Release\vc110.pdb'; linking object as if no debug info
+     1>libjpeg.lib(jidctfst.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jidctfst.obj)' or at 'F:\WorkPlace\VS WorkPlace\cubemapDemo\CubeMap\Release\vc110.pdb'; linking object as if no debug info
+     1>libjpeg.lib(jaricom.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libjpeg.lib(jaricom.obj)' or at 'F:\WorkPlace\VS WorkPlace\cubemapDemo\CubeMap\Release\vc110.pdb'; linking object as if no debug info
+     1>libpng.lib(pngget.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libpng.lib(pngget.obj)' or at 'F:\WorkPlace\VS WorkPlace\cubemapDemo\CubeMap\Release\vc110.pdb'; linking object as if no debug info
+     1>libpng.lib(pngread.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libpng.lib(pngread.obj)' or at 'F:\WorkPlace\VS WorkPlace\cubemapDemo\CubeMap\Release\vc110.pdb'; linking object as if no debug info
+     1>libpng.lib(pngrtran.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libpng.lib(pngrtran.obj)' or at 'F:\WorkPlace\VS WorkPlace\cubemapDemo\CubeMap\Release\vc110.pdb'; linking object as if no debug info
+     1>libpng.lib(png.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libpng.lib(png.obj)' or at 'F:\WorkPlace\VS WorkPlace\cubemapDemo\CubeMap\Release\vc110.pdb'; linking object as if no debug info
+     1>libpng.lib(pngrio.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libpng.lib(pngrio.obj)' or at 'F:\WorkPlace\VS WorkPlace\cubemapDemo\CubeMap\Release\vc110.pdb'; linking object as if no debug info
+     1>libpng.lib(pngrutil.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libpng.lib(pngrutil.obj)' or at 'F:\WorkPlace\VS WorkPlace\cubemapDemo\CubeMap\Release\vc110.pdb'; linking object as if no debug info
+     1>libpng.lib(pngerror.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libpng.lib(pngerror.obj)' or at 'F:\WorkPlace\VS WorkPlace\cubemapDemo\CubeMap\Release\vc110.pdb'; linking object as if no debug info
+     1>libpng.lib(pngtrans.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libpng.lib(pngtrans.obj)' or at 'F:\WorkPlace\VS WorkPlace\cubemapDemo\CubeMap\Release\vc110.pdb'; linking object as if no debug info
+     1>libpng.lib(pngmem.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libpng.lib(pngmem.obj)' or at 'F:\WorkPlace\VS WorkPlace\cubemapDemo\CubeMap\Release\vc110.pdb'; linking object as if no debug info
+     1>libpng.lib(pngset.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libpng.lib(pngset.obj)' or at 'F:\WorkPlace\VS WorkPlace\cubemapDemo\CubeMap\Release\vc110.pdb'; linking object as if no debug info
+     1>libpng.lib(pngwrite.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libpng.lib(pngwrite.obj)' or at 'F:\WorkPlace\VS WorkPlace\cubemapDemo\CubeMap\Release\vc110.pdb'; linking object as if no debug info
+     1>libpng.lib(pngwutil.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libpng.lib(pngwutil.obj)' or at 'F:\WorkPlace\VS WorkPlace\cubemapDemo\CubeMap\Release\vc110.pdb'; linking object as if no debug info
+     1>libpng.lib(pngwio.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libpng.lib(pngwio.obj)' or at 'F:\WorkPlace\VS WorkPlace\cubemapDemo\CubeMap\Release\vc110.pdb'; linking object as if no debug info
+     1>libpng.lib(pngwtran.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'libpng.lib(pngwtran.obj)' or at 'F:\WorkPlace\VS WorkPlace\cubemapDemo\CubeMap\Release\vc110.pdb'; linking object as if no debug info
+     1>zlib.lib(inflate.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'zlib.lib(inflate.obj)' or at 'F:\WorkPlace\VS WorkPlace\cubemapDemo\CubeMap\Release\vc110.pdb'; linking object as if no debug info
+     1>zlib.lib(adler32.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'zlib.lib(adler32.obj)' or at 'F:\WorkPlace\VS WorkPlace\cubemapDemo\CubeMap\Release\vc110.pdb'; linking object as if no debug info
+     1>zlib.lib(crc32.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'zlib.lib(crc32.obj)' or at 'F:\WorkPlace\VS WorkPlace\cubemapDemo\CubeMap\Release\vc110.pdb'; linking object as if no debug info
+     1>zlib.lib(deflate.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'zlib.lib(deflate.obj)' or at 'F:\WorkPlace\VS WorkPlace\cubemapDemo\CubeMap\Release\vc110.pdb'; linking object as if no debug info
+     1>zlib.lib(inffast.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'zlib.lib(inffast.obj)' or at 'F:\WorkPlace\VS WorkPlace\cubemapDemo\CubeMap\Release\vc110.pdb'; linking object as if no debug info
+     1>zlib.lib(zutil.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'zlib.lib(zutil.obj)' or at 'F:\WorkPlace\VS WorkPlace\cubemapDemo\CubeMap\Release\vc110.pdb'; linking object as if no debug info
+     1>zlib.lib(inftrees.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'zlib.lib(inftrees.obj)' or at 'F:\WorkPlace\VS WorkPlace\cubemapDemo\CubeMap\Release\vc110.pdb'; linking object as if no debug info
+     1>zlib.lib(trees.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'zlib.lib(trees.obj)' or at 'F:\WorkPlace\VS WorkPlace\cubemapDemo\CubeMap\Release\vc110.pdb'; linking object as if no debug info
+         CubeMap.vcxproj -> F:\WorkPlace\VS WorkPlace\cubemapDemo\CubeMap\Release\CubeMap.exe
+     1>Done Building Project "F:\WorkPlace\VS WorkPlace\cubemapDemo\CubeMap\CubeMap\CubeMap.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.32
