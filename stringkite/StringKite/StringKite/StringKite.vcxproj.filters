@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="GL Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Kite Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Tool Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="GLSL Files">
+      <UniqueIdentifier>{b26e841d-63a6-475d-bb16-1472ec21f2b4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="sim_string.h">
+      <Filter>Kite Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sim_fluid.h">
+      <Filter>Kite Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CSM.h">
+      <Filter>Tool Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utils.h">
+      <Filter>GL Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rx_trackball.h">
+      <Filter>Tool Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rx_shaders.h">
+      <Filter>GLSL Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rx_shadowmap.h">
+      <Filter>GLSL Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FTL.h">
+      <Filter>Tool Files</Filter>
+    </ClInclude>
+    <ClInclude Include="macros4cc.h">
+      <Filter>Tool Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sim_kiteShape.h">
+      <Filter>Kite Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stringKite.h">
+      <Filter>Kite Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sim_string.cpp">
+      <Filter>Kite Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sim_fluid.cpp">
+      <Filter>Kite Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>GL Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CSM.cpp">
+      <Filter>Tool Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rx_trackball.cpp">
+      <Filter>Tool Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FTL.cpp">
+      <Filter>Tool Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sim_kiteShape.cpp">
+      <Filter>Kite Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stringKite.cpp">
+      <Filter>Kite Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shading.fp">
+      <Filter>GLSL Files</Filter>
+    </None>
+    <None Include="shading.vp">
+      <Filter>GLSL Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>
