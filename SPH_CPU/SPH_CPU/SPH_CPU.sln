@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SPH_CPU", "SPH_CPU\SPH_CPU.vcxproj", "{901C276E-5E46-474C-8D33-095617D07315}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{901C276E-5E46-474C-8D33-095617D07315}.Debug|Win32.ActiveCfg = Debug|Win32
+		{901C276E-5E46-474C-8D33-095617D07315}.Debug|Win32.Build.0 = Debug|Win32
+		{901C276E-5E46-474C-8D33-095617D07315}.Release|Win32.ActiveCfg = Release|Win32
+		{901C276E-5E46-474C-8D33-095617D07315}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
