@@ -1,0 +1,36 @@
+/*!
+  @file shading.vs
+	
+  @brief GLSL頂点シェーダ
+ 
+  @author Makoto Fujisawa
+  @date 2011
+*/
+// FILE --shading.vp--
+#version 120
+
+
+//-----------------------------------------------------------------------------
+// 変数
+//-----------------------------------------------------------------------------
+// フラグメントシェーダに値を渡すための変数
+varying vec4 vPos;
+varying vec3 vNrm;
+
+//-----------------------------------------------------------------------------
+// エントリ関数
+//-----------------------------------------------------------------------------
+void main(void)
+{
+
+	// フラグメントシェーダでの計算用(モデルビュー変換のみ)
+	vPos = gl_Vertex;			// 頂点位置
+	vNrm = normalize(gl_NormalMatrix*gl_Normal);	// 頂点法線
+
+	// 描画用
+	gl_Position = gl_ProjectionMatrix*gl_ModelViewMatrix*gl_Vertex;	// 頂点位置
+	gl_FrontColor = gl_Color;				// 頂点色
+	gl_TexCoord[0] = gl_MultiTexCoord0;		// 頂点テクスチャ座標
+
+}
+

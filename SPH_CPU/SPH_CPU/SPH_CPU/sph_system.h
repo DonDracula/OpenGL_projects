@@ -8,11 +8,20 @@
 
 #include "sph_type.h"
 
+#include "rx_utility.h"				//Vector classes
+#include "rx_matrix.h"
+#include <GL\glew.h>
+#include <GL\glut.h>
+#include <queue>
+
 class Particle
 {
 public:
 	uint id;
-	Vec3_f pos;			//position
+	Vec3_f current_pos;			//position
+	Vec3_f previous_pos[10];		//previous position
+	//std::queue<Vec3_f> previous_pos;
+
 	Vec3_f vel;			//velocity
 	Vec3_f acc;			//acceleration
 	Vec3_f ev;
@@ -28,6 +37,7 @@ public:
 class SPHSystem
 {
 public:
+	int count ;
 	uint max_particle;
 	uint num_particle;
 
@@ -38,6 +48,9 @@ public:
 	float cell_size;		//size of a cell
 	uint3 grid_size;
 	uint tot_cell;			//total number of the cells
+
+	std::vector<Particle> particleUnion;
+	std::vector<std::vector<Particle>> particleTrack;
 
 	Vec3_f gravity;
 	float wall_damping;
@@ -70,6 +83,7 @@ public:
 	void update();
 	void init_system();
 	void add_particle(Vec3_f pos,Vec3_f vel);
+	void draw();
 
 private:
 	void build_table();

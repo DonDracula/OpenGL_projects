@@ -1,8 +1,8 @@
-﻿Build started 2016/06/01 11:36:22.
-     1>Project "F:\WorkPlace\CG Projects\stringkite\StringKite\StringKite\StringKite.vcxproj" on node 2 (Build target(s)).
+﻿Build started 2016/07/20 17:53:15.
+     1>Project "F:\WorkPlace\VS WorkPlace\GitHub上传\OpenGL_projects\stringkite\StringKite\StringKite\StringKite.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"F:\WorkPlace\VS WorkPlace\common\shared\inc" /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D _CRT_SECURE_NO_WARNINGS /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt stringKite.cpp
-         stringKite.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"F:\WorkPlace\VS WorkPlace\common\shared\inc" /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D _CRT_SECURE_NO_WARNINGS /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt sim_string.cpp
+         sim_string.cpp
      1>F:\WorkPlace\VS WorkPlace\common\shared\inc\rx_matrix.h(1922): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
      1>F:\WorkPlace\VS WorkPlace\common\shared\inc\rx_matrix.h(1923): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
      1>F:\WorkPlace\VS WorkPlace\common\shared\inc\rx_matrix.h(1925): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
@@ -13,8 +13,10 @@
      1>F:\WorkPlace\VS WorkPlace\common\shared\inc\rx_matrix.h(1964): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
      1>F:\WorkPlace\VS WorkPlace\common\shared\inc\rx_matrix.h(1989): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
      1>F:\WorkPlace\VS WorkPlace\common\shared\inc\rx_matrix.h(1990): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>sim_string.cpp(53): warning C4018: '<' : signed/unsigned mismatch
+     1>sim_string.cpp(63): warning C4018: '<' : signed/unsigned mismatch
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\WorkPlace\CG Projects\stringkite\StringKite\Release\StringKite.exe" /NOLOGO /LIBPATH:"F:\WorkPlace\VS WorkPlace\common\shared\lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:\WorkPlace\CG Projects\stringkite\StringKite\Release\StringKite.pdb" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\WorkPlace\CG Projects\stringkite\StringKite\Release\StringKite.lib" /MACHINE:X86 /SAFESEH Release\CSM.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\WorkPlace\VS WorkPlace\GitHub上传\OpenGL_projects\stringkite\StringKite\Release\StringKite.exe" /NOLOGO /LIBPATH:"F:\WorkPlace\VS WorkPlace\common\shared\lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:\WorkPlace\VS WorkPlace\GitHub上传\OpenGL_projects\stringkite\StringKite\Release\StringKite.pdb" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\WorkPlace\VS WorkPlace\GitHub上传\OpenGL_projects\stringkite\StringKite\Release\StringKite.lib" /MACHINE:X86 /SAFESEH Release\CSM.obj
          Release\FTL.obj
          Release\main.obj
          Release\rx_trackball.obj
@@ -24,9 +26,9 @@
          Release\sim_string.obj
          Generating code
          Finished generating code
-         StringKite.vcxproj -> F:\WorkPlace\CG Projects\stringkite\StringKite\Release\StringKite.exe
-     1>Done Building Project "F:\WorkPlace\CG Projects\stringkite\StringKite\StringKite\StringKite.vcxproj" (Build target(s)).
+         StringKite.vcxproj -> F:\WorkPlace\VS WorkPlace\GitHub上传\OpenGL_projects\stringkite\StringKite\Release\StringKite.exe
+     1>Done Building Project "F:\WorkPlace\VS WorkPlace\GitHub上传\OpenGL_projects\stringkite\StringKite\StringKite\StringKite.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:02.82
+Time Elapsed 00:00:02.83

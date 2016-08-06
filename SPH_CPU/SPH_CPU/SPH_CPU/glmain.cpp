@@ -1,4 +1,4 @@
-/*
+﻿/*
 	SPH main function
  */
 
@@ -183,14 +183,41 @@ void init_ratio()
 void render_particles()
 {
 	glPointSize(1.0f);
-	glColor3f(0.2f, 0.2f, 1.0f);
+	glColor3f(0.2f, 0.6f, 1.0f);
 
 	for(uint i=0; i<sph->num_particle; i++)
 	{
 		glBegin(GL_POINTS);
-			glVertex3f(sph->mem[i].pos.x*sim_ratio.x+real_world_origin.x, 
-						sph->mem[i].pos.y*sim_ratio.y+real_world_origin.y,
-						sph->mem[i].pos.z*sim_ratio.z+real_world_origin.z);
+		glVertex3f(sph->mem[i].current_pos.x*sim_ratio.x+real_world_origin.x, 
+			sph->mem[i].current_pos.y*sim_ratio.y+real_world_origin.y,
+			sph->mem[i].current_pos.z*sim_ratio.z+real_world_origin.z);
+		glEnd();
+
+		//glBegin(GL_LINE_STRIP);
+		//	glVertex3f(sph->mem[i].pos.x*sim_ratio.x+real_world_origin.x, 
+		//				sph->mem[i].pos.y*sim_ratio.y+real_world_origin.y,
+		//				sph->mem[i].pos.z*sim_ratio.z+real_world_origin.z);
+
+
+		//glEnd();
+	}
+
+	glLineWidth(5.0f);
+	glColor3f(0.2f, 0.6f, 1.0f);
+		for(uint i=0; i<sph->num_particle; i++)
+	{
+		glBegin(GL_LINE_STRIP);
+	//	std::vector<std::vector<Particle>>::iterator k = sph->particleTrack.begin();
+		//if(sph->mem[i].previous_pos[9]){
+			for(int index=0;index<10;index++)
+			{
+				glVertex3f(sph->mem[i].previous_pos[index].x *sim_ratio.x+real_world_origin.x, 
+					sph->mem[i].previous_pos[index].y *sim_ratio.x+real_world_origin.y, 
+					sph->mem[i].previous_pos[index].z *sim_ratio.x+real_world_origin.z 
+					);
+
+			}
+	//	}
 		glEnd();
 	}
 }
@@ -220,8 +247,18 @@ void display_func()
 	render_particles();
 
 	glUseProgram(0);
-	draw_box(real_world_origin.x, real_world_origin.y, real_world_origin.z, real_world_side.x, real_world_side.y, real_world_side.z);
+	//draw_box(real_world_origin.x, real_world_origin.y, real_world_origin.z, real_world_side.x, real_world_side.y, real_world_side.z);
 
+	//画长方体，位置，缩放，绘制正方体
+	glColor3f(0.5f, 0.5f, 0.5f);
+	glPushMatrix();  
+	glTranslatef(5,0,0);
+    glScalef(0.1, 1, 1);  
+    glutSolidCube(5.0);   
+
+    glPopMatrix();  
+
+	//display_chang();
 	glPopMatrix();
 
     glutSwapBuffers();
@@ -258,6 +295,11 @@ void keyboard_func(unsigned char key, int x, int y)
 	if(key == ' ')
 	{
 		sph->sys_running=1-sph->sys_running;
+	}
+
+	if(key == 'i')
+	{
+	 sph->init_system();
 	}
 
 	if(key == 'w')

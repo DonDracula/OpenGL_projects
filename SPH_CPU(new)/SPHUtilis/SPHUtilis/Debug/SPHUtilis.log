@@ -1,0 +1,170 @@
+﻿Build started 2016/06/30 17:50:12.
+     1>Project "F:\WorkPlace\VS WorkPlace\GitHub上传\OpenGL_projects\SPH_CPU(new)\SPHUtilis\SPHUtilis\SPHUtilis.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt glmain.cpp SphUtlis.cpp
+         SphUtlis.cpp
+     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1922): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1923): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1925): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1934): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1935): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1942): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1943): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1964): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1989): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1990): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\sphutlis.cpp(13): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\sphutlis.cpp(14): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\sphutlis.cpp(15): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\sphutlis.cpp(19): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\sphutlis.cpp(20): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\sphutlis.cpp(21): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\sphutlis.cpp(22): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\sphutlis.cpp(23): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\sphutlis.cpp(24): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\sphutlis.cpp(60): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\sphutlis.cpp(73): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\sphutlis.cpp(89): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\sphutlis.cpp(223): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\sphutlis.cpp(227): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\sphutlis.cpp(351): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\sphutlis.cpp(379): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+         glmain.cpp
+     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1922): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1923): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1925): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1934): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1935): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1942): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1943): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1964): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1989): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1990): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(61): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(62): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(65): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(66): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(67): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(68): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(70): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(71): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(72): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(90): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(91): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(92): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(111): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(112): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(113): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(115): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(116): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(117): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(119): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(120): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(121): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(123): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(124): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(125): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(131): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(132): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(133): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(135): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(136): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(137): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(139): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(140): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(141): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(143): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(144): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(145): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(152): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(153): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(154): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(156): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(157): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(158): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(160): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(161): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(162): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(164): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(165): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(166): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(430): warning C4244: 'initializing' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(551): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(552): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(553): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(572): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(573): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(574): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(576): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(577): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(578): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(580): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(581): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(582): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(584): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(585): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(586): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(592): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(593): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(594): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(596): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(597): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(598): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(600): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(601): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(602): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(604): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(605): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(606): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(613): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(614): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(615): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(617): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(618): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(619): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(621): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(622): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(623): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(625): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(626): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\sph_cpu(new)\sphutilis\sphutilis\glmain.cpp(627): warning C4244: '=' : conversion from 'double' to 'GLfloat', possible loss of data
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\WorkPlace\VS WorkPlace\GitHub上传\OpenGL_projects\SPH_CPU(new)\SPHUtilis\Debug\SPHUtilis.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:\WorkPlace\VS WorkPlace\GitHub上传\OpenGL_projects\SPH_CPU(new)\SPHUtilis\Debug\SPHUtilis.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\WorkPlace\VS WorkPlace\GitHub上传\OpenGL_projects\SPH_CPU(new)\SPHUtilis\Debug\SPHUtilis.lib" /MACHINE:X86 Debug\glmain.obj
+         Debug\Particle.obj
+         Debug\Sphere.obj
+         Debug\SphUtlis.obj
+         Debug\Wall.obj
+     1>glmain.obj : error LNK2019: unresolved external symbol __imp__glewInit@0 referenced in function _main
+     1>glmain.obj : error LNK2019: unresolved external symbol __imp__glewIsSupported@4 referenced in function _main
+     1>glmain.obj : error LNK2001: unresolved external symbol __imp____glewPointParameteri
+     1>glmain.obj : error LNK2001: unresolved external symbol __imp____glewBindBuffer
+     1>glmain.obj : error LNK2001: unresolved external symbol __imp____glewBufferData
+     1>glmain.obj : error LNK2001: unresolved external symbol __imp____glewBufferSubData
+     1>glmain.obj : error LNK2001: unresolved external symbol __imp____glewGenBuffers
+     1>glmain.obj : error LNK2001: unresolved external symbol __imp____glewMapBuffer
+     1>glmain.obj : error LNK2001: unresolved external symbol __imp____glewUnmapBuffer
+     1>glmain.obj : error LNK2001: unresolved external symbol __imp____glewAttachShader
+     1>glmain.obj : error LNK2001: unresolved external symbol __imp____glewCompileShader
+     1>glmain.obj : error LNK2001: unresolved external symbol __imp____glewCreateProgram
+     1>glmain.obj : error LNK2001: unresolved external symbol __imp____glewCreateShader
+     1>glmain.obj : error LNK2001: unresolved external symbol __imp____glewDeleteShader
+     1>glmain.obj : error LNK2001: unresolved external symbol __imp____glewDisableVertexAttribArray
+     1>glmain.obj : error LNK2001: unresolved external symbol __imp____glewEnableVertexAttribArray
+     1>glmain.obj : error LNK2001: unresolved external symbol __imp____glewGetProgramiv
+     1>glmain.obj : error LNK2001: unresolved external symbol __imp____glewGetShaderInfoLog
+     1>glmain.obj : error LNK2001: unresolved external symbol __imp____glewGetShaderiv
+     1>glmain.obj : error LNK2001: unresolved external symbol __imp____glewGetUniformLocation
+     1>glmain.obj : error LNK2001: unresolved external symbol __imp____glewLinkProgram
+     1>glmain.obj : error LNK2001: unresolved external symbol __imp____glewShaderSource
+     1>glmain.obj : error LNK2001: unresolved external symbol __imp____glewUseProgram
+     1>glmain.obj : error LNK2001: unresolved external symbol __imp____glewVertexAttribPointer
+     1>glmain.obj : error LNK2001: unresolved external symbol __imp____glewBindVertexArray
+     1>glmain.obj : error LNK2001: unresolved external symbol __imp____glewGenVertexArrays
+     1>glmain.obj : error LNK2001: unresolved external symbol __imp__glewExperimental
+     1>F:\WorkPlace\VS WorkPlace\GitHub上传\OpenGL_projects\SPH_CPU(new)\SPHUtilis\Debug\SPHUtilis.exe : fatal error LNK1120: 27 unresolved externals
+     1>Done Building Project "F:\WorkPlace\VS WorkPlace\GitHub上传\OpenGL_projects\SPH_CPU(new)\SPHUtilis\SPHUtilis\SPHUtilis.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:02.38

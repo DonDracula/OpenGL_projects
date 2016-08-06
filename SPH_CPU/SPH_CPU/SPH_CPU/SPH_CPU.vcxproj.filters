@@ -33,6 +33,9 @@
     <ClInclude Include="sph_system.h">
       <Filter>SPH Files</Filter>
     </ClInclude>
+    <ClInclude Include="Wall.h">
+      <Filter>Tool Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="sph_timer.cpp">
@@ -43,6 +46,9 @@
     </ClCompile>
     <ClCompile Include="glmain.cpp">
       <Filter>GL Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wall.cpp">
+      <Filter>Tool Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

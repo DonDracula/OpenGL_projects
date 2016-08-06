@@ -85,11 +85,13 @@
     <ClInclude Include="sph_system.h" />
     <ClInclude Include="sph_timer.h" />
     <ClInclude Include="sph_type.h" />
+    <ClInclude Include="Wall.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="glmain.cpp" />
     <ClCompile Include="sph_system.cpp" />
     <ClCompile Include="sph_timer.cpp" />
+    <ClCompile Include="Wall.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

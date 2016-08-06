@@ -1,22 +1,7 @@
-﻿Build started 2016/03/10 13:08:13.
+﻿Build started 2016/08/06 12:49:49.
      1>Project "F:\WorkPlace\VS WorkPlace\GitHub上传\OpenGL_projects\Kite Simulation System\KiteSimulationSystem\KiteSimulationSystem\KiteSimulationSystem.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _CRT_SECURE_NO_WARNINGS /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt CSM.cpp fluid_solver.cpp glmain.cpp rx_trackball.cpp string_simulation.cpp
-         string_simulation.cpp
-     1>f:\workplace\vs workplace\github上传\opengl_projects\kite simulation system\kitesimulationsystem\kitesimulationsystem\string_simulation.h(5): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1922): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
-     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1923): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
-     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1925): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
-     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1934): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
-     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1935): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
-     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1942): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
-     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1943): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
-     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1964): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1989): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1990): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>f:\workplace\vs workplace\github上传\opengl_projects\kite simulation system\kitesimulationsystem\kitesimulationsystem\string_simulation.cpp(42): warning C4018: '<' : signed/unsigned mismatch
-     1>f:\workplace\vs workplace\github上传\opengl_projects\kite simulation system\kitesimulationsystem\kitesimulationsystem\string_simulation.cpp(52): warning C4018: '<' : signed/unsigned mismatch
-         rx_trackball.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _CRT_SECURE_NO_WARNINGS /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt glmain.cpp string_simulation.cpp
          glmain.cpp
      1>f:\workplace\vs workplace\github上传\opengl_projects\kite simulation system\kitesimulationsystem\kitesimulationsystem\string_simulation.h(5): warning C4067: unexpected tokens following preprocessor directive - expected a newline
      1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1922): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
@@ -29,59 +14,9 @@
      1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1964): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
      1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1989): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
      1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1990): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-         fluid_solver.cpp
-         CSM.cpp
-     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1922): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
-     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1923): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
-     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1925): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
-     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1934): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
-     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1935): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
-     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1942): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
-     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1943): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
-     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1964): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1989): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1990): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(2237): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-                 f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(2226) : while compiling class template member function 'bool rxMatrixN<T,N>::LUDecomp(rxMatrixN<T,N> &,std::vector<_Ty> &,double &)'
-                 with
-                 [
-                     T=double,
-                     N=9,
-                     _Ty=int
-                 ]
-                 f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(2345) : see reference to function template instantiation 'bool rxMatrixN<T,N>::LUDecomp(rxMatrixN<T,N> &,std::vector<_Ty> &,double &)' being compiled
-                 with
-                 [
-                     T=double,
-                     N=9,
-                     _Ty=int
-                 ]
-                 f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(2335) : while compiling class template member function 'void rxMatrixN<T,N>::Invert(void)'
-                 with
-                 [
-                     T=double,
-                     N=9
-                 ]
-                 f:\workplace\vs workplace\github上传\opengl_projects\kite simulation system\kitesimulationsystem\kitesimulationsystem\csm.cpp(278) : see reference to function template instantiation 'void rxMatrixN<T,N>::Invert(void)' being compiled
-                 with
-                 [
-                     T=double,
-                     N=9
-                 ]
-                 f:\workplace\vs workplace\github上传\opengl_projects\kite simulation system\kitesimulationsystem\kitesimulationsystem\csm.cpp(247) : see reference to class template instantiation 'rxMatrixN<T,N>' being compiled
-                 with
-                 [
-                     T=double,
-                     N=9
-                 ]
-     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(2246): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(2247): warning C4244: '-=' : conversion from 'double' to 'float', possible loss of data
-     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(2253): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(2254): warning C4244: '-=' : conversion from 'double' to 'float', possible loss of data
-     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(2256): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(2264): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(2275): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
          Generating Code...
+         Skipping... (no relevant changes detected)
+         string_simulation.cpp
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\WorkPlace\VS WorkPlace\GitHub上传\OpenGL_projects\Kite Simulation System\KiteSimulationSystem\Debug\KiteSimulationSystem.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:\WorkPlace\VS WorkPlace\GitHub上传\OpenGL_projects\Kite Simulation System\KiteSimulationSystem\Debug\KiteSimulationSystem.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\WorkPlace\VS WorkPlace\GitHub上传\OpenGL_projects\Kite Simulation System\KiteSimulationSystem\Debug\KiteSimulationSystem.lib" /MACHINE:X86 Debug\CSM.obj
          Debug\fluid_solver.obj
@@ -93,4 +28,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:03.69
+Time Elapsed 00:00:01.67

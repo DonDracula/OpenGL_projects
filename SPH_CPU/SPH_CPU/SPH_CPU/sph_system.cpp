@@ -7,6 +7,7 @@
 
 SPHSystem::SPHSystem()
 {
+	count = 0;
 	max_particle=30000;
 	num_particle=0;
 
@@ -76,6 +77,7 @@ SPHSystem::~SPHSystem()
 
 void SPHSystem::update()
 {
+
 	if(sys_running == 0)
 	{
 		return;
@@ -85,7 +87,55 @@ void SPHSystem::update()
 	comp_dens_pres();
 	comp_force_adv();
 	advection();
+
+
+
+	if(count<10)
+	{
+		for(uint i=0; i<num_particle; i++)
+		{
+		Particle *p;
+		p=&(mem[i]); 
+		p->previous_pos[count]= p->current_pos;
+		
+		}
+		count++;
+	}
+	else
+	{
+		for(uint i=0; i<num_particle; i++)
+		{
+		Particle *p;
+		p=&(mem[i]); 
+		for(int index=0;index<9;index++)
+			{
+				p->previous_pos[index] =p->previous_pos[index+1];
+			}
+			p->previous_pos[9]= p->current_pos;
+		}
+	}
+					std::cout<<"      dfasdfdfsadfsa"<<mem[8].current_pos.x<<std::endl;
+					std::cout<<"      sssssssssssssssssssssssssssssss"<<mem[8].previous_pos[8].x<<std::endl;
 }
+
+void SPHSystem::draw()
+{
+	glPointSize(1.0f);
+	glColor3f(0.2f, 0.6f, 1.0f);
+
+	//for(uint i=0; i<num_particle; i++)
+	//{
+	//	glBegin(GL_LINE_STRIP);
+	//	std::vector<std::vector<Particle>>::iterator k = particleTrack.begin();
+	//		for(int index=0;index<9;index++)
+	//		{
+	//			glVertex3f(mem[i].previous_pos[index].x *sim_ratio.x+real_world_origin.x, 
+	//		}
+	//	glEnd();
+	//}
+}
+
+
 //initialize the SPH system
 void SPHSystem::init_system()
 {
@@ -97,16 +147,17 @@ void SPHSystem::init_system()
 	vel.z=0.0f;
 	
 	//add particles based on the world size
-	for(pos.x=world_size.x*0.0f; pos.x<world_size.x*0.6f; pos.x+=(kernel*0.8f))
-	{
-		for(pos.y=world_size.y*0.0f; pos.y<world_size.y*0.9f; pos.y+=(kernel*0.8f))
+//	for(pos.x=world_size.x*0.0f; pos.x<world_size.x*0.9f; pos.x+=(kernel*0.8f))
+	pos.x=world_size.x*0.0f;
+	
+		for(pos.y=world_size.y*0.0f; pos.y<world_size.y*0.6f; pos.y+=(kernel*0.8f))
 		{
-			for(pos.z=world_size.z*0.0f; pos.z<world_size.z*0.6f; pos.z+=(kernel*0.8f))
+			for(pos.z=world_size.z*0.0f; pos.z<world_size.z*0.8f; pos.z+=(kernel*0.8f))
 			{
 				add_particle(pos, vel);
 			}
 		}
-	}
+	
 
 	printf("Init Particle: %u\n", num_particle);
 }
@@ -118,7 +169,10 @@ void SPHSystem::add_particle(Vec3_f pos, Vec3_f vel)
 
 	p->id=num_particle;
 
-	p->pos=pos;
+	p->current_pos=pos;
+	p->previous_pos[0] = pos;
+
+	//p->previous_pos[0]=pos;
 	p->vel=vel;
 	//x,y,z of the acceleration
 	p->acc.x=0.0f;
@@ -151,7 +205,7 @@ void SPHSystem::build_table()
 	for(uint i=0; i<num_particle; i++)
 	{
 		p=&(mem[i]);
-		hash=calc_cell_hash(calc_cell_pos(p->pos));
+		hash=calc_cell_hash(calc_cell_pos(p->current_pos));
 
 		if(cell[hash] == NULL)
 		{
@@ -182,7 +236,7 @@ void SPHSystem::comp_dens_pres()
 	for(uint i=0; i<num_particle; i++)
 	{
 		p=&(mem[i]); 
-		cell_pos=calc_cell_pos(p->pos);
+		cell_pos=calc_cell_pos(p->current_pos);
 
 		p->dens=0.0f;
 		p->pres=0.0f;
@@ -206,9 +260,9 @@ void SPHSystem::comp_dens_pres()
 					np=cell[hash];
 					while(np != NULL)
 					{
-						rel_pos.x=np->pos.x-p->pos.x;
-						rel_pos.y=np->pos.y-p->pos.y;
-						rel_pos.z=np->pos.z-p->pos.z;
+						rel_pos.x=np->current_pos.x-p->current_pos.x;
+						rel_pos.y=np->current_pos.y-p->current_pos.y;
+						rel_pos.z=np->current_pos.z-p->current_pos.z;
 						r2=rel_pos.x*rel_pos.x+rel_pos.y*rel_pos.y+rel_pos.z*rel_pos.z;
 
 						if(r2<INF || r2>=kernel_2)
@@ -258,7 +312,7 @@ void SPHSystem::comp_force_adv()
 	for(uint i=0; i<num_particle; i++)
 	{
 		p=&(mem[i]); 
-		cell_pos=calc_cell_pos(p->pos);
+		cell_pos=calc_cell_pos(p->current_pos);
 
 		p->acc.x=0.0f;
 		p->acc.y=0.0f;
@@ -288,9 +342,9 @@ void SPHSystem::comp_force_adv()
 					np=cell[hash];
 					while(np != NULL)
 					{
-						rel_pos.x=p->pos.x-np->pos.x;
-						rel_pos.y=p->pos.y-np->pos.y;
-						rel_pos.z=p->pos.z-np->pos.z;
+						rel_pos.x=p->current_pos.x-np->current_pos.x;
+						rel_pos.y=p->current_pos.y-np->current_pos.y;
+						rel_pos.z=p->current_pos.z-np->current_pos.z;
 						r2=rel_pos.x*rel_pos.x+rel_pos.y*rel_pos.y+rel_pos.z*rel_pos.z;
 
 						if(r2 < kernel_2 && r2 > INF)
@@ -344,17 +398,21 @@ void SPHSystem::comp_force_adv()
 void SPHSystem::advection()
 {
 	Particle *p;
+	Vec3 wall_normal;
+	wall_normal.data[0] =-1.0;
 	for(uint i=0; i<num_particle; i++)
 	{
 		p=&(mem[i]);
+
+		//float m_dot = dot(wall_normal, (p->pos-Vec3_f(0.6,0.325,0.34)));
 
 		p->vel.x=p->vel.x+p->acc.x*time_step/p->dens+gravity.x*time_step;
 		p->vel.y=p->vel.y+p->acc.y*time_step/p->dens+gravity.y*time_step;
 		p->vel.z=p->vel.z+p->acc.z*time_step/p->dens+gravity.z*time_step;
 
-		p->pos.x=p->pos.x+p->vel.x*time_step;
-		p->pos.y=p->pos.y+p->vel.y*time_step;
-		p->pos.z=p->pos.z+p->vel.z*time_step;
+		p->current_pos.x=p->current_pos.x+p->vel.x*time_step;
+		p->current_pos.y=p->current_pos.y+p->vel.y*time_step;
+		p->current_pos.z=p->current_pos.z+p->vel.z*time_step;
 	
 
 
@@ -363,72 +421,51 @@ void SPHSystem::advection()
 		//	p->vel.x=p->vel.x*wall_damping;
 		//	p->pos.x=world_size.x-BOUNDARY;
 		//}
+		Vec3 impulse = normalize(wall_normal);
+		impulse *= (1.0f+0.0f)*dot(wall_normal, Vec3(p->vel.x,p->vel.y,p->vel.z));
 
-		//if(p->pos.x < 0.0f)
-		//{
-		//	p->vel.x=p->vel.x*wall_damping;
-		//	p->pos.x=0.0f;
-		//}
-
-		//if(p->pos.y >= world_size.y-BOUNDARY)
-		//{
-		//	p->vel.y=p->vel.y*wall_damping;
-		//	p->pos.y=world_size.y-BOUNDARY;
-		//}
-
-		//if(p->pos.y < 0.0f)
-		//{
-		//	p->vel.y=p->vel.y*wall_damping;
-		//	p->pos.y=0.0f;
-		//}
-
-		//if(p->pos.z >= world_size.z-BOUNDARY)
-		//{
-		//	p->vel.z=p->vel.z*wall_damping;
-		//	p->pos.z=world_size.z-BOUNDARY;
-		//}
-
-		//if(p->pos.z < 0.0f)
-		//{
-		//	p->vel.z=p->vel.z*wall_damping;
-		//	p->pos.z=0.0f;
-		//}
-
-				if(p->pos.x >= world_size.x-BOUNDARY)
+		if(p->current_pos.x >=0.64)
 		{
-			p->vel.x=0;
-			p->pos.x=world_size.x-BOUNDARY;
+			if(p->current_pos.y>0.25&&p->current_pos.y<0.4&&p->current_pos.z>0.25&&p->current_pos.z<0.43)
+			{
+			  p->vel.x=p->vel.x*wall_damping;
+				//p->vel.x = -1*(float)impulse.data[0];
+				//p->vel.y = -1*(float)impulse.data[1];
+				//p->vel.z = -1*(float)impulse.data[2];
+			p->current_pos.x=0.6;
+			}
 		}
 
-		if(p->pos.x < 0.0f)
+		if(p->current_pos.x < 0.0f)
 		{
-			p->vel.x=0;
-			p->pos.x=0.0f;
+			p->vel.x=p->vel.x*wall_damping;
+			p->current_pos.x=0.0f;
 		}
 
-		if(p->pos.y >= world_size.y-BOUNDARY)
+		if(p->current_pos.y >= world_size.y-BOUNDARY)
 		{
-			p->vel.y=0;
-			p->pos.y=world_size.y-BOUNDARY;
+			p->vel.y=p->vel.y*wall_damping;
+			p->current_pos.y=world_size.y-BOUNDARY;
 		}
 
-		if(p->pos.y < 0.0f)
+		if(p->current_pos.y < 0.0f)
 		{
-			p->vel.y=0;
-			p->pos.y=0.0f;
+			p->vel.y=p->vel.y*wall_damping;
+			p->current_pos.y=0.0f;
 		}
 
-		if(p->pos.z >= world_size.z-BOUNDARY)
+		if(p->current_pos.z >= world_size.z-BOUNDARY)
 		{
-			p->vel.z=0;
-			p->pos.z=world_size.z-BOUNDARY;
+			p->vel.z=p->vel.z*wall_damping;
+			p->current_pos.z=world_size.z-BOUNDARY;
 		}
 
-		if(p->pos.z < 0.0f)
+		if(p->current_pos.z < 0.0f)
 		{
-			p->vel.z=0;
-			p->pos.z=0.0f;
+			p->vel.z=p->vel.z*wall_damping;
+			p->current_pos.z=0.0f;
 		}
+
 
 		p->ev.x=(p->ev.x+p->vel.x)/2;
 		p->ev.y=(p->ev.y+p->vel.y)/2;
