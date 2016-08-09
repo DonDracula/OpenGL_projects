@@ -1,5 +1,5 @@
 ## Description：
-Implement Particle-Based (SPH) Fluid Simulation in C++/OpenGL.
+Implement Particle-Based (SPH) Fluid Simulation in C++/OpenGL, . We didn't implement the surface and just using the CPU to calculate.
 
 ## Reference: 
 M. Muller, D. Charypar and M. Gross, Particle-based Fluid Simulation for Interactive Applications, In Proc. SCA2003, pp.154-159, 2003.
