@@ -1,11 +1,77 @@
-﻿Build started 2015/08/04 4:13:31.
-     1>Project "F:\WorkPlace\VS WorkPlace\OpenGL_WorkSpace\MassSpringSimulation\MassSpringSimulation\MassSpringSimulation\MassSpringSimulation.vcxproj" on node 2 (Build target(s)).
+﻿Build started 2016/08/09 22:42:06.
+     1>Project "F:\WorkPlace\VS WorkPlace\GitHub上传\OpenGL_projects\MassSpringSimulation\MassSpringSimulation\MassSpringSimulation\MassSpringSimulation.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt glmain.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt glmain.cpp mass.cpp RopeSimulator.cpp rx_trackball.cpp spring.cpp
+         spring.cpp
+     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1922): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1923): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1925): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1934): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1935): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1942): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1943): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1964): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1989): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1990): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\massspringsimulation\massspringsimulation\massspringsimulation\rx_pcube.h(518): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_nnsearch.h(339): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_nnsearch.h(340): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_nnsearch.h(457): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_nnsearch.h(458): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_nnsearch.h(459): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_nnsearch.h(595): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_nnsearch.h(596): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_nnsearch.h(597): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_nnsearch.h(613): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\massspringsimulation\massspringsimulation\massspringsimulation\spring.cpp(26): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+         rx_trackball.cpp
+         RopeSimulator.cpp
+     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1922): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1923): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1925): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1934): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1935): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1942): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1943): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1964): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1989): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1990): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\massspringsimulation\massspringsimulation\massspringsimulation\rx_pcube.h(518): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_nnsearch.h(339): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_nnsearch.h(340): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_nnsearch.h(457): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_nnsearch.h(458): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_nnsearch.h(459): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_nnsearch.h(595): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_nnsearch.h(596): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_nnsearch.h(597): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_nnsearch.h(613): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\massspringsimulation\massspringsimulation\massspringsimulation\ropesimulator.cpp(110): warning C4244: 'return' : conversion from 'int' to 'float', possible loss of data
+         mass.cpp
+     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1922): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1923): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1925): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1934): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1935): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1942): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1943): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1964): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1989): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1990): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\github上传\opengl_projects\massspringsimulation\massspringsimulation\massspringsimulation\rx_pcube.h(518): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_nnsearch.h(339): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_nnsearch.h(340): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_nnsearch.h(457): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_nnsearch.h(458): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_nnsearch.h(459): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_nnsearch.h(595): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_nnsearch.h(596): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_nnsearch.h(597): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_nnsearch.h(613): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
          glmain.cpp
-     1>f:\workplace\vs workplace\common\shared\inc\rx_jpeg.h(50): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>f:\workplace\vs workplace\common\shared\inc\rx_jpeg.h(49): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(218) : see declaration of 'fopen'
-     1>f:\workplace\vs workplace\common\shared\inc\rx_jpeg.h(123): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>f:\workplace\vs workplace\common\shared\inc\rx_jpeg.h(122): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(218) : see declaration of 'fopen'
      1>f:\workplace\vs workplace\common\shared\inc\rx_png.h(48): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(218) : see declaration of 'fopen'
@@ -15,17 +81,18 @@
                  c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(218) : see declaration of 'fopen'
      1>f:\workplace\vs workplace\common\shared\inc\rx_bitmap.h(382): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(218) : see declaration of 'fopen'
-     1>f:\workplace\vs workplace\opengl_workspace\massspringsimulation\massspringsimulation\massspringsimulation\glmain.cpp(214): warning C4305: 'initializing' : truncation from 'double' to 'float'
-     1>f:\workplace\vs workplace\opengl_workspace\massspringsimulation\massspringsimulation\massspringsimulation\glmain.cpp(224): warning C4305: 'initializing' : truncation from 'double' to 'float'
+     1>f:\workplace\vs workplace\github上传\opengl_projects\massspringsimulation\massspringsimulation\massspringsimulation\glmain.cpp(214): warning C4305: 'initializing' : truncation from 'double' to 'float'
+     1>f:\workplace\vs workplace\github上传\opengl_projects\massspringsimulation\massspringsimulation\massspringsimulation\glmain.cpp(224): warning C4305: 'initializing' : truncation from 'double' to 'float'
+         Generating Code...
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\WorkPlace\VS WorkPlace\OpenGL_WorkSpace\MassSpringSimulation\MassSpringSimulation\Debug\MassSpringSimulation.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:\WorkPlace\VS WorkPlace\OpenGL_WorkSpace\MassSpringSimulation\MassSpringSimulation\Debug\MassSpringSimulation.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\WorkPlace\VS WorkPlace\OpenGL_WorkSpace\MassSpringSimulation\MassSpringSimulation\Debug\MassSpringSimulation.lib" /MACHINE:X86 Debug\glmain.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\WorkPlace\VS WorkPlace\GitHub上传\OpenGL_projects\MassSpringSimulation\MassSpringSimulation\Debug\MassSpringSimulation.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:\WorkPlace\VS WorkPlace\GitHub上传\OpenGL_projects\MassSpringSimulation\MassSpringSimulation\Debug\MassSpringSimulation.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\WorkPlace\VS WorkPlace\GitHub上传\OpenGL_projects\MassSpringSimulation\MassSpringSimulation\Debug\MassSpringSimulation.lib" /MACHINE:X86 Debug\glmain.obj
          Debug\mass.obj
          Debug\RopeSimulator.obj
          Debug\rx_trackball.obj
          Debug\spring.obj
-         MassSpringSimulation.vcxproj -> F:\WorkPlace\VS WorkPlace\OpenGL_WorkSpace\MassSpringSimulation\MassSpringSimulation\Debug\MassSpringSimulation.exe
-     1>Done Building Project "F:\WorkPlace\VS WorkPlace\OpenGL_WorkSpace\MassSpringSimulation\MassSpringSimulation\MassSpringSimulation\MassSpringSimulation.vcxproj" (Build target(s)).
+         MassSpringSimulation.vcxproj -> F:\WorkPlace\VS WorkPlace\GitHub上传\OpenGL_projects\MassSpringSimulation\MassSpringSimulation\Debug\MassSpringSimulation.exe
+     1>Done Building Project "F:\WorkPlace\VS WorkPlace\GitHub上传\OpenGL_projects\MassSpringSimulation\MassSpringSimulation\MassSpringSimulation\MassSpringSimulation.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:01.45
+Time Elapsed 00:00:04.47

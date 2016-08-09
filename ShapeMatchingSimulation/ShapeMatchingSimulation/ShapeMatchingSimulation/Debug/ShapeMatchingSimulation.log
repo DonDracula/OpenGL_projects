@@ -1,23 +1,9 @@
-﻿Build started 2015/10/20 20:14:19.
-     1>Project "F:\WorkPlace\VS WorkPlace\OpenGL_WorkSpace\ShapeMatchingSimulation\ShapeMatchingSimulation\ShapeMatchingSimulation\ShapeMatchingSimulation.vcxproj" on node 2 (Build target(s)).
-     1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt gmain.cpp
-         gmain.cpp
-     1>f:\workplace\vs workplace\opengl_workspace\shapematchingsimulation\shapematchingsimulation\shapematchingsimulation\gmain.cpp(69): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(110) : see declaration of 'strcpy'
-     1>f:\workplace\vs workplace\opengl_workspace\shapematchingsimulation\shapematchingsimulation\shapematchingsimulation\gmain.cpp(211): warning C4305: 'initializing' : truncation from 'double' to 'float'
-     1>f:\workplace\vs workplace\opengl_workspace\shapematchingsimulation\shapematchingsimulation\shapematchingsimulation\gmain.cpp(220): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
-     1>f:\workplace\vs workplace\opengl_workspace\shapematchingsimulation\shapematchingsimulation\shapematchingsimulation\gmain.cpp(221): warning C4305: 'initializing' : truncation from 'double' to 'float'
-     1>f:\workplace\vs workplace\opengl_workspace\shapematchingsimulation\shapematchingsimulation\shapematchingsimulation\gmain.cpp(231): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
-       Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\WorkPlace\VS WorkPlace\OpenGL_WorkSpace\ShapeMatchingSimulation\ShapeMatchingSimulation\Debug\ShapeMatchingSimulation.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:\WorkPlace\VS WorkPlace\OpenGL_WorkSpace\ShapeMatchingSimulation\ShapeMatchingSimulation\Debug\ShapeMatchingSimulation.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\WorkPlace\VS WorkPlace\OpenGL_WorkSpace\ShapeMatchingSimulation\ShapeMatchingSimulation\Debug\ShapeMatchingSimulation.lib" /MACHINE:X86 Debug\rx_trackball.obj
-         Debug\m2Matrix.obj
-         Debug\m5Matrix.obj
-         Debug\deformable.obj
-         Debug\gmain.obj
-         ShapeMatchingSimulation.vcxproj -> F:\WorkPlace\VS WorkPlace\OpenGL_WorkSpace\ShapeMatchingSimulation\ShapeMatchingSimulation\Debug\ShapeMatchingSimulation.exe
-     1>Done Building Project "F:\WorkPlace\VS WorkPlace\OpenGL_WorkSpace\ShapeMatchingSimulation\ShapeMatchingSimulation\ShapeMatchingSimulation\ShapeMatchingSimulation.vcxproj" (Build target(s)).
+﻿Build started 2016/08/09 22:59:44.
+     1>Project "F:\WorkPlace\VS WorkPlace\GitHub上传\OpenGL_projects\ShapeMatchingSimulation\ShapeMatchingSimulation\ShapeMatchingSimulation\ShapeMatchingSimulation.vcxproj" on node 2 (Build target(s)).
+     1>Link:
+         ShapeMatchingSimulation.vcxproj -> F:\WorkPlace\VS WorkPlace\GitHub上传\OpenGL_projects\ShapeMatchingSimulation\ShapeMatchingSimulation\Debug\ShapeMatchingSimulation.exe
+     1>Done Building Project "F:\WorkPlace\VS WorkPlace\GitHub上传\OpenGL_projects\ShapeMatchingSimulation\ShapeMatchingSimulation\ShapeMatchingSimulation\ShapeMatchingSimulation.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:01.15
+Time Elapsed 00:00:00.03

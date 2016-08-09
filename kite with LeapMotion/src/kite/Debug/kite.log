@@ -1,0 +1,14 @@
+﻿Build started 2015/10/27 9:23:05.
+     1>Project "F:\WorkPlace\CG Projects\kite with LeapMotion\src\kite\kite.vcxproj" on node 2 (Build target(s)).
+     1>PreBuildEvent:
+         xcopy /yr "D:\SoftWare\LeapMotion\LeapDeveloperKit_2.3.1+31549_win\LeapSDK\lib\x86\Leap.dll" "F:\WorkPlace\VS WorkPlace\OpenGL_WorkSpace\Leap motion Test\PLeapMotionTest"
+         :VCEnd
+         D:\SoftWare\LeapMotion\LeapDeveloperKit_2.3.1+31549_win\LeapSDK\lib\x86\Leap.dll
+         1 個のファイルをコピーしました
+       Link:
+         kite.vcxproj -> F:\WorkPlace\CG Projects\kite with LeapMotion\src\kite\Debug\kite.exe
+     1>Done Building Project "F:\WorkPlace\CG Projects\kite with LeapMotion\src\kite\kite.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:05.45

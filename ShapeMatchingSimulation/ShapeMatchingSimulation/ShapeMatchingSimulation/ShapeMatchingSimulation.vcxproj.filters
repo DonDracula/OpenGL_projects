@@ -18,19 +18,19 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\ShapeMatching2D\Math2d\m2Matrix.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\ShapeMatching2D\Math2d\m5Matrix.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="deformable.cpp">
       <Filter>Deformable Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\common\shared\inc\rx_trackball.cpp">
+    <ClCompile Include="gmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rx_trackball.cpp">
       <Filter>Trackball Files</Filter>
     </ClCompile>
-    <ClCompile Include="gmain.cpp">
+    <ClCompile Include="Math2d\m5Matrix.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Math2d\m2Matrix.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -56,7 +56,7 @@
     <ClInclude Include="deformable.h">
       <Filter>Deformable Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\common\shared\inc\rx_trackball.h">
+    <ClInclude Include="rx_trackball.h">
       <Filter>Trackball Files</Filter>
     </ClInclude>
   </ItemGroup>

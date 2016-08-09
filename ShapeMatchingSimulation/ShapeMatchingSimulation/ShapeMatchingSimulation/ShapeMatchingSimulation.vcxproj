@@ -39,7 +39,7 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>F:\WorkPlace\VS WorkPlace\common\shared\inc;F:\WorkPlace\VS WorkPlace\OpenGL_WorkSpace\ShapeMatchingSimulation\ShapeMatchingSimulation\ShapeMatchingSimulation\Math2d;$(IncludePath)</IncludePath>
+    <IncludePath>F:\WorkPlace\VS WorkPlace\common\shared\inc;F:\WorkPlace\VS WorkPlace\OpenGL_WorkSpace\ShapeMatchingSimulation\ShapeMatchingSimulation\ShapeMatchingSimulation\Math2d;F:\WorkPlace\VS WorkPlace\GitHub上传\OpenGL_projects\ShapeMatchingSimulation\ShapeMatchingSimulation\ShapeMatchingSimulation\Math2d;$(IncludePath)</IncludePath>
     <LibraryPath>F:\WorkPlace\VS WorkPlace\common\shared\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -65,14 +65,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\common\shared\inc\rx_trackball.cpp" />
-    <ClCompile Include="..\..\..\..\ShapeMatching2D\Math2d\m2Matrix.cpp" />
-    <ClCompile Include="..\..\..\..\ShapeMatching2D\Math2d\m5Matrix.cpp" />
     <ClCompile Include="deformable.cpp" />
     <ClCompile Include="gmain.cpp" />
+    <ClCompile Include="Math2d\m2Matrix.cpp" />
+    <ClCompile Include="Math2d\m5Matrix.cpp" />
+    <ClCompile Include="rx_trackball.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\common\shared\inc\rx_trackball.h" />
     <ClInclude Include="..\..\..\..\ShapeMatching2D\Math2d\m2Bounds.h" />
     <ClInclude Include="..\..\..\..\ShapeMatching2D\Math2d\m2Matrix.h" />
     <ClInclude Include="..\..\..\..\ShapeMatching2D\Math2d\m2Real.h" />
@@ -80,6 +79,7 @@
     <ClInclude Include="..\..\..\..\ShapeMatching2D\Math2d\m5Matrix.h" />
     <ClInclude Include="..\..\..\..\ShapeMatching2D\Math2d\math2d.h" />
     <ClInclude Include="deformable.h" />
+    <ClInclude Include="rx_trackball.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

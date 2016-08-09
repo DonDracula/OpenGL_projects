@@ -5,7 +5,7 @@
 //---------------------------------------------------------------------------
 #include <iostream>
 #include <vector>
-#include "math2d.h"
+#include "Math2d/math2d.h"
 #include <string>
 
 //OpenGL

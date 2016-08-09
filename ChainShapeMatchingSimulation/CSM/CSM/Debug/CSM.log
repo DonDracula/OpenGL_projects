@@ -1,11 +1,62 @@
-﻿Build started 2015/10/04 20:33:10.
-     1>Project "F:\WorkPlace\CG Projects\Chain_ShapeMatching\CSM\CSM\CSM.vcxproj" on node 2 (Build target(s)).
+﻿Build started 2016/08/09 23:15:08.
+     1>Project "F:\WorkPlace\VS WorkPlace\GitHub上传\OpenGL_projects\ChainShapeMatchingSimulation\CSM\CSM\CSM.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\..\..\common\shared\inc\rx_trackball.cpp glmain.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\..\..\common\shared\inc\rx_trackball.cpp glmain.cpp shape_matching.cpp
+         shape_matching.cpp
+     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1922): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1923): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1925): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1934): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1935): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1942): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1943): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1964): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1989): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(1990): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(2237): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+                 f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(2226) : while compiling class template member function 'bool rxMatrixN<T,N>::LUDecomp(rxMatrixN<T,N> &,std::vector<_Ty> &,double &)'
+                 with
+                 [
+                     T=double,
+                     N=9,
+                     _Ty=int
+                 ]
+                 f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(2345) : see reference to function template instantiation 'bool rxMatrixN<T,N>::LUDecomp(rxMatrixN<T,N> &,std::vector<_Ty> &,double &)' being compiled
+                 with
+                 [
+                     T=double,
+                     N=9,
+                     _Ty=int
+                 ]
+                 f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(2335) : while compiling class template member function 'void rxMatrixN<T,N>::Invert(void)'
+                 with
+                 [
+                     T=double,
+                     N=9
+                 ]
+                 f:\workplace\vs workplace\github上传\opengl_projects\chainshapematchingsimulation\csm\csm\shape_matching.cpp(278) : see reference to function template instantiation 'void rxMatrixN<T,N>::Invert(void)' being compiled
+                 with
+                 [
+                     T=double,
+                     N=9
+                 ]
+                 f:\workplace\vs workplace\github上传\opengl_projects\chainshapematchingsimulation\csm\csm\shape_matching.cpp(247) : see reference to class template instantiation 'rxMatrixN<T,N>' being compiled
+                 with
+                 [
+                     T=double,
+                     N=9
+                 ]
+     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(2246): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(2247): warning C4244: '-=' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(2253): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(2254): warning C4244: '-=' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(2256): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(2264): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>f:\workplace\vs workplace\common\shared\inc\rx_matrix.h(2275): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
          glmain.cpp
-     1>f:\workplace\vs workplace\common\shared\inc\rx_jpeg.h(50): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>f:\workplace\vs workplace\common\shared\inc\rx_jpeg.h(49): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(218) : see declaration of 'fopen'
-     1>f:\workplace\vs workplace\common\shared\inc\rx_jpeg.h(123): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>f:\workplace\vs workplace\common\shared\inc\rx_jpeg.h(122): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(218) : see declaration of 'fopen'
      1>f:\workplace\vs workplace\common\shared\inc\rx_png.h(48): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(218) : see declaration of 'fopen'
@@ -15,25 +66,15 @@
                  c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(218) : see declaration of 'fopen'
      1>f:\workplace\vs workplace\common\shared\inc\rx_bitmap.h(382): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(218) : see declaration of 'fopen'
-     1>f:\workplace\vs workplace\common\shared\inc\rx_mesh.h(469): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(311) : see declaration of 'sscanf'
-     1>f:\workplace\vs workplace\common\shared\inc\rx_mesh.h(487): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(311) : see declaration of 'sscanf'
-     1>f:\workplace\vs workplace\common\shared\inc\rx_mesh.h(509): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(311) : see declaration of 'sscanf'
-     1>f:\workplace\vs workplace\common\shared\inc\rx_mesh.h(531): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(311) : see declaration of 'sscanf'
-     1>f:\workplace\vs workplace\common\shared\inc\rx_mesh.h(532): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(311) : see declaration of 'sscanf'
-     1>f:\workplace\cg projects\chain_shapematching\csm\csm\glmain.cpp(199): warning C4018: '<' : signed/unsigned mismatch
-     1>f:\workplace\cg projects\chain_shapematching\csm\csm\glmain.cpp(212): warning C4018: '<' : signed/unsigned mismatch
-     1>f:\workplace\cg projects\chain_shapematching\csm\csm\glmain.cpp(348): warning C4018: '<' : signed/unsigned mismatch
-     1>f:\workplace\cg projects\chain_shapematching\csm\csm\glmain.cpp(395): warning C4305: 'argument' : truncation from 'double' to 'GLclampf'
+     1>f:\workplace\vs workplace\github上传\opengl_projects\chainshapematchingsimulation\csm\csm\glmain.cpp(199): warning C4018: '<' : signed/unsigned mismatch
+     1>f:\workplace\vs workplace\github上传\opengl_projects\chainshapematchingsimulation\csm\csm\glmain.cpp(212): warning C4018: '<' : signed/unsigned mismatch
+     1>f:\workplace\vs workplace\github上传\opengl_projects\chainshapematchingsimulation\csm\csm\glmain.cpp(348): warning C4018: '<' : signed/unsigned mismatch
+     1>f:\workplace\vs workplace\github上传\opengl_projects\chainshapematchingsimulation\csm\csm\glmain.cpp(395): warning C4305: 'argument' : truncation from 'double' to 'GLclampf'
          rx_trackball.cpp
      1>c1xx : fatal error C1083: Cannot open source file: '..\..\..\..\common\shared\inc\rx_trackball.cpp': No such file or directory
          Generating Code...
-     1>Done Building Project "F:\WorkPlace\CG Projects\Chain_ShapeMatching\CSM\CSM\CSM.vcxproj" (Build target(s)) -- FAILED.
+     1>Done Building Project "F:\WorkPlace\VS WorkPlace\GitHub上传\OpenGL_projects\ChainShapeMatchingSimulation\CSM\CSM\CSM.vcxproj" (Build target(s)) -- FAILED.
 
 Build FAILED.
 
-Time Elapsed 00:00:02.20
+Time Elapsed 00:00:03.71

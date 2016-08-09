@@ -1,0 +1,22 @@
+﻿Build started 2016/08/09 23:07:31.
+     1>Project "F:\WorkPlace\VS WorkPlace\GitHub上传\OpenGL_projects\kite with LeapMotion\src\kite\kite.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"F:\WorkPlace\VS WorkPlace\common\shared\inc" /I../../shared/inc /Iinc /ID:\SoftWare\LeapMotion\LeapDeveloperKit_2.3.1+31549_win\LeapSDK\include /Zi /nologo /W3 /WX- /O2 /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D KFBX_PLUGIN /D KFBX_FBXSDK /D KFBX_NODLL /D _CRT_SECURE_NO_DEPRECATE /D _UNICODE /D UNICODE /Gm- /EHsc /MT /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc110.pdb" /Gd /TP /wd4267 /wd4311 /wd4996 /wd4244 /analyze- /errorReport:prompt ..\..\shared\inc\rx_trackball.cpp glmain.cpp rx_kite.cpp rx_solver.cpp
+         rx_trackball.cpp
+         glmain.cpp
+     1>glmain.cpp(501): warning C4305: 'argument' : truncation from 'double' to 'float'
+         rx_kite.cpp
+         rx_solver.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"Release\kite.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:../../../common/shared/lib /LIBPATH:../../shared/lib /LIBPATH:lib /LIBPATH:D:\SoftWare\LeapMotion\LeapDeveloperKit_2.3.1+31549_win\LeapSDK\lib\x86 /LIBPATH:D:\SoftWare\LeapMotion\LeapDeveloperKit_2.3.1+31549_win\LeapSDK\lib\x64 Leap.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:"Release\kite.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE:NO /IMPLIB:"Release\kite.lib" /MACHINE:X86 /SAFESEH Release\rx_trackball.obj
+         Release\glmain.obj
+         Release\rx_kite.obj
+         Release\rx_solver.obj
+         Generating code
+         Finished generating code
+         kite.vcxproj -> F:\WorkPlace\VS WorkPlace\GitHub上传\OpenGL_projects\kite with LeapMotion\src\kite\Release\kite.exe
+     1>Done Building Project "F:\WorkPlace\VS WorkPlace\GitHub上传\OpenGL_projects\kite with LeapMotion\src\kite\kite.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.00
