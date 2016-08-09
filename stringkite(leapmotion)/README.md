@@ -5,6 +5,7 @@ we implement the interaction function using the Leap motion.
 
 ## Reference: 
 W.Rungjiratananon., "Chain Shape Matching for Simulating Complex Hairstyles"，Computer Graphics Forum 2010.
+
 Taichi Okamoto, Makoto Fujisawa, Kenjiro Miura, "Interactive Simulation of Flying Japanese Kites", 2009, ACM SIGGRAPH Video Game Proceedings.
 
 ![](https://github.com/DonDracula/OpenGL_projects/blob/master/stringkite(leapmotion)/screenshot-stringkite.PNG)  
