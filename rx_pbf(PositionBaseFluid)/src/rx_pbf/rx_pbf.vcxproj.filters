@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="SPH Files">
+      <UniqueIdentifier>{283310bc-2d78-4a50-a1fb-2dcabab1231f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Render Files">
+      <UniqueIdentifier>{a1cd1b5c-9729-44a6-a71b-03b3c10496c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mesh Files">
+      <UniqueIdentifier>{52b9c2f9-da97-4fd8-b548-4daa4b58d033}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI Files">
+      <UniqueIdentifier>{63685a47-76f7-48a0-b92c-f15cbf51ae6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CUDA">
+      <UniqueIdentifier>{30127667-169d-46aa-9b8b-ce8e2edb7182}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="rx_sph_solid.cpp">
+      <Filter>SPH Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rx_mc_cpu.cpp">
+      <Filter>Mesh Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rx_mc_gpu.cpp">
+      <Filter>Mesh Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rx_fltk_glcanvas.cpp">
+      <Filter>GUI Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rx_fltk_window.cpp">
+      <Filter>GUI Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rx_ps.cpp">
+      <Filter>SPH Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>GUI Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rx_sph_pbd.cpp">
+      <Filter>SPH Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rx_sph_pbd_gpu.cpp">
+      <Filter>SPH Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rx_particle_on_surf.cpp">
+      <Filter>SPH Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rx_sph_solid_poly.cpp">
+      <Filter>SPH Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\shared\inc\rx_trackball.cpp">
+      <Filter>Render Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="rx_sph.h">
+      <Filter>SPH Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rx_sph_commons.h">
+      <Filter>SPH Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rx_sph_solid.h">
+      <Filter>SPH Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rx_material.h">
+      <Filter>Render Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rx_mc.h">
+      <Filter>Mesh Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rx_mc_tables.h">
+      <Filter>Mesh Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rx_fltk_glcanvas.h">
+      <Filter>GUI Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rx_fltk_widgets.h">
+      <Filter>GUI Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rx_ps.h">
+      <Filter>SPH Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rx_nnsearch.h">
+      <Filter>SPH Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rx_sph_config.h">
+      <Filter>SPH Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rx_cuda_utils.h">
+      <Filter>CUDA</Filter>
+    </ClInclude>
+    <ClInclude Include="rx_kernel.h">
+      <Filter>SPH Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rx_fltk_window.h">
+      <Filter>GUI Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rx_particle_on_surf.h">
+      <Filter>SPH Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\shared\inc\rx_trackball.h">
+      <Filter>Render Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="rx_cu_common.cuh">
+      <Filter>CUDA</Filter>
+    </None>
+    <None Include="rx_cu_funcs.cuh">
+      <Filter>CUDA</Filter>
+    </None>
+    <None Include="rx_cu_common.cu">
+      <Filter>CUDA</Filter>
+    </None>
+    <None Include="rx_mc_kernel.cu">
+      <Filter>Mesh Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="rx_cu_funcs.cu">
+      <Filter>CUDA</Filter>
+    </CudaCompile>
+    <CudaCompile Include="rx_mc.cu">
+      <Filter>Mesh Files</Filter>
+    </CudaCompile>
+    <CudaCompile Include="rx_pbf_kernel.cu">
+      <Filter>CUDA</Filter>
+    </CudaCompile>
+    <CudaCompile Include="rx_pbf.cu">
+      <Filter>CUDA</Filter>
+    </CudaCompile>
+  </ItemGroup>
+</Project>
